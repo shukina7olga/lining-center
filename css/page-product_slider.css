@@ -1,0 +1,179 @@
+.page-product__slider {
+    display: flex;
+    width: 43%;
+}
+
+
+/* вертикальный слайдер */
+.slider-vertical {
+    margin-right: 20px;
+}
+
+.slider-vertical .slick-track{
+    display: block;
+}
+
+.slider-vertical__item {
+    margin-bottom: 10px;
+}
+
+.slider-vertical__box {
+    width: 84px;
+    height: 60px;
+}
+
+.slider-vertical__box img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-vertical .slick-list {
+    overflow: hidden;
+}
+
+
+/* большой слайдер товара*/
+.slider-product .slick-track{
+    display: flex;
+}
+
+.slider-product .slick-list {
+    overflow: hidden;
+}
+
+.slider-product {
+    min-width: 0;
+    position: relative;
+}
+.slider-product__box {
+    position: relative;
+    height: 680px;
+}
+
+.slider-product__box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-product__label-box {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.slider-product__label-box svg {
+    width: 167px;
+}
+
+
+/* кнопки половинчатые */
+.slider-product .slick-arrow {
+	position: absolute;
+	top: 38%;
+	z-index: 1000;
+	font-size: 0;
+	width: 60px;
+	height: 60px;
+}
+
+.slider-product .slick-arrow.slick-prev {
+	left: 0;
+	background: url('../img/miniLeftArrow.svg')  no-repeat;
+}
+.slider-product .slick-arrow.slick-next {
+    right: -30px;
+	background: url('../img/miniRightArrow.svg')  no-repeat;
+}
+
+
+
+
+
+
+
+@media (max-width: 1440px) {  
+    .page-product__slider {
+        width: 52%;
+    }
+
+    .slider-vertical__box {
+        width: 78px;
+        height: 60px;
+    }
+
+
+    .slider-product__box {
+        height: 548px;
+    }
+
+    .slider-product .slick-arrow {
+        top: 28%;
+    }
+}
+
+@media (max-width: 1024px) { 
+    .page-product__slider {
+        width: 49%;
+    } 
+    .slider-vertical__box {
+        width: 63px;
+        height: 51px;
+    }
+
+
+    .slider-product__label-box svg {
+        width: 115px;
+    }
+
+
+    .slider-product__box {
+        height: 460px;
+    }
+}
+
+
+@media (max-width: 768px) {  
+    .page-product__slider {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+
+    .slider-vertical {
+        display: none;
+    }
+
+
+    .slider-product__box {
+        height: 475px;
+    }
+
+    .page-product__slider {
+        width: 100%;
+    }
+
+    .slider-product .slick-arrow {
+        display: none !important;
+    }
+}
+
+
+
+
+@media (max-width: 360px) {
+    .slider-product__label-box {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    .slider-product__label-box svg {
+        width: 85px;
+    }
+
+    .slider-product__box {
+        height: 330px;
+    }
+}

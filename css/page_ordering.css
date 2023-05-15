@@ -1,0 +1,137 @@
+.page-ordering {
+    background-color: #F8F9FD;
+    color: #201E1E;
+    padding-bottom: 120px;
+}
+
+.page-ordering__box {
+    padding: 30px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.page-ordering__box-title {
+    margin-bottom: 30px;
+}
+
+.page-ordering .purchase-table {
+    min-width: 500px;
+}
+
+.page-ordering .purchase-table__col {
+    width: 5%;
+    text-align: center;
+}
+
+.page-ordering .purchase-table__buy {
+    margin-right: 50px;
+}
+
+.text-field__important {
+    color: #ED2438;
+}
+
+.page-ordering__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.page-ordering__card {
+    position: relative;
+    overflow: hidden;
+    padding: 40px;
+    width: 49%;
+    background-color: #F8F9FD;
+    margin-bottom: 20px;
+}
+
+.page-ordering__img {
+    position: absolute;
+    background: #E7EAF4;
+    width: 120px;
+    height: 120px;
+    border-radius: 300px;
+    top: 0;
+    right: 0;
+    transform: translate(15%, -30%);
+}
+
+.page-ordering__img svg {
+    position: absolute;
+    left: 29%;
+    bottom: 24%;
+}
+
+.page-ordering__img svg path {
+    fill: #6C6F79;
+}
+
+
+.page-ordering__card.active {
+    background-color: #fff;
+    border: 1px solid #E7EAF4;
+}
+
+.page-ordering__card.active .page-ordering__img svg path {
+    fill: #FFFFFF;
+}
+
+.page-ordering__card.active .page-ordering__img {
+    background-color: #ED2438;
+}
+
+.page-ordering__row {
+    display: flex;
+    margin-top: 28px;
+}
+
+.page-ordering__col--first {
+    margin-right: 15%;
+}
+
+.page-ordering__card-title {
+    margin-top: 10px;
+    width: 90%;
+}
+
+.page-ordering__card-text {
+    width: 90%;
+}
+
+.page-ordering__card-text, .page-ordering__card-label {
+    color: #6C6F79;
+}
+
+.page-ordering__card-title--pay {
+    margin-bottom: 27px;
+}
+
+
+.page-ordering__card-text--pay {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .page-ordering {
+        padding-bottom: 80px;
+    }
+    
+    .page-ordering__box {
+        padding: 20px;
+    }
+
+    .page-ordering__card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .page-ordering__img {
+        transform: translate(27%, -44%);
+    }
+    .page-ordering__img svg {
+        left: 26%;
+        bottom: 12%;
+    }
+}

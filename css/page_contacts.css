@@ -1,0 +1,123 @@
+.contacts-page {
+    background-color: #201E1E;
+    position: relative;
+    border-bottom: 1px solid #6C6F79;
+}
+
+.contacts-page__inform {
+    padding-bottom: 50px;
+    width: 50%;   
+}
+
+.contacts-page__inform h2 {
+    color: white;
+    padding-bottom: 5%;
+}
+
+
+.map-contacts {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}   
+
+
+.contacts-page__box {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.contacts-page__box-item {
+    padding-right: 30px;   
+}
+
+.contacts-page__wrap {
+    padding-top: 3%;
+}
+.contacts-page__wrap--pb{
+    padding-bottom: 3%;
+}
+
+.contacts-page__big-wrap {
+    margin-top: 4%;
+}
+
+.contacts__slim-text--time {
+    padding-bottom: 12px;
+}
+
+.contacts__address {
+    color: white;
+    font-weight: 400;
+    font-size: calc(18px + 3 *(100vw / 1920));
+    line-height: 160%;
+}
+
+.contacts__big-text {
+    font-weight: 400;
+    color: white;
+    font-size: calc(20px + 10 *(100vw / 1920));
+}
+
+
+.contacts__small-text {
+    font-weight: 400;
+    color: white;
+    font-size: calc(12px + 2 *(100vw / 1920));
+    padding-bottom: 5px;
+}
+
+.contacts__slim-text {
+    font-weight: 300;
+    color: white;
+    font-size: calc(14px + 4 *(100vw / 1920));
+    line-height: 22px;
+}
+
+.contacts__mini-title {
+    font-weight: 400;
+    color: white;   
+    line-height: 30px;
+    font-size: calc(17px + 8 *(100vw / 1920));
+}
+
+@media (max-width: 767px) {
+    .contacts-page__inform {
+        width: 100%;   
+    }
+
+    .map-contacts {
+        position: unset;
+        height: 331px;
+        width: 100%;
+    }
+
+    .contacts__address {
+        font-size: calc(18px + (3+3*0.7)*((100vw - 320px) / 1920));
+    }
+
+    .contacts__big-text {
+        font-size: calc(20px + (10+10*0.7)*((100vw - 320px) / 1920));
+    }   
+    
+    .contacts__small-text {
+        font-size: calc(12px + (2+2*0.7)*((100vw - 320px) / 1920));
+    }
+
+    .contacts__slim-text {
+        font-size: calc(14px + (4+4*0.7)*((100vw - 320px) / 1920));
+        line-height: 17px;
+    }
+
+    .contacts__mini-title {
+        font-size: calc(17px + (8+8*0.7)*((100vw - 320px) / 1920));
+    }
+}
+
+@media (max-width: 320px) {
+    .map-contacts {
+        height: 237px;
+    }
+}

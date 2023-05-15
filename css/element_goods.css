@@ -1,0 +1,131 @@
+.good-card {
+    background: #FFFFFF;
+    border: 1px solid #E7EAF4;  
+    position: relative;
+}
+
+.good-card__top-label-box {
+    position: absolute;
+}
+
+.good-card__top-label {
+    padding: 8px 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;  
+    background-color: #201E1E;  
+}
+
+.good-card__top-label--red {
+    background-color: #FF364A;
+}
+
+.good-card__inform-box {
+    padding: 4%;
+}
+
+.good-card__grade {
+    display: flex;
+}
+
+.good-card__grade svg {
+    margin-right: 1%;
+}
+
+.good-card__comment {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #6C6F79;
+    margin-left: 2%;
+}
+
+.good-card__class {
+    color: #6C6F79;
+    margin-top: 10px;
+}
+
+.good-card__inform {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.good-card__title {
+    font-family: 'Kelson Sans Bold';
+    color: #201E1E;
+    line-height: 130%;
+    width: 70%;
+}
+
+.good-card__price {
+    color: #201E1E;
+}
+
+.good-card__valuta {
+    font-family: sans-serif;
+}
+
+
+.good-card__inform-price-box {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.good-card__price--old {
+    margin-top: -30%;
+    text-decoration: line-through;
+    color: #6C6F79;    
+}
+
+
+.good-card img {
+    height: 400px;
+    object-fit: cover;
+}
+
+@media (max-width:  1440px) {
+    .good-card img {
+        height: 270px;
+    }
+}
+
+@media (max-width:  768px) {
+    .good-card__top-label {
+        padding: 5px 13px;
+    }
+}
+
+@media (max-width:  500px) {
+    .good-card img {
+        height: 160px;
+    }
+
+    .good-card__inform {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .good-card__price--old {
+        display: none;
+    }
+
+    .good-card__price {
+        padding-top: 10px;
+    } 
+}
+
+@media (max-width:  360px) {
+    .section-link {
+        display: none;
+    }
+
+    .good-card__grade svg {
+        width: 10px;
+    }
+
+    .good-card__top-label {
+        padding: 5px 9px;
+    }
+}

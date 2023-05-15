@@ -1,0 +1,94 @@
+.comment-card {
+    background-color: #FFFFFF;
+    margin: 3%;
+}
+
+.comment-card__good-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #E7EAF4;
+}
+
+.comment-card__good-box img {
+    width: 90px;
+    height: 90px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.comment-card__good-inform {
+    display: flex;
+    align-items: center;    
+}
+
+
+.comment-card__good-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-card__good-price {
+    white-space: nowrap;
+    padding-right: 15px;
+}
+
+.comment-card__good-class {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #6C6F79;    
+}
+
+
+.comment-card__good-title {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 5px;
+}
+
+
+
+
+.comment-card__base-box {
+    padding: 20px;
+    border: 1px solid #E7EAF4;
+}
+
+.comment-card__base-inform {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-card__name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;  
+}
+
+.comment-card__date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #6C6F79;    
+}
+
+
+.comment-card__text-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 160%; 
+    margin-top: 15px;
+    margin-bottom: 5px;   
+}
+
+.comment-card__base-box a {
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    text-decoration-line: underline;
+    color: #ED2438;  
+    margin-top: 10px;  
+}

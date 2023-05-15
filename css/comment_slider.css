@@ -1,0 +1,108 @@
+.comments {
+    background-color: #F8F9FD;
+    padding: 80px 0;
+}
+
+/* Слайдер */
+.slider-comment{
+    min-width: 0;
+}
+
+
+
+.slider-comment {
+    position: relative;
+}
+
+.slider-comment .slick-arrow {
+	position: absolute;
+	top: 38%;
+	z-index: 1;
+	font-size: 0;
+	width: 40px;
+	height: 40px;
+    border-radius: 30px; 
+}
+
+.slider-comment .slick-arrow.slick-prev {
+	left: -10px;
+	background: url('../img/arrowleft.svg') 0 0 / 70% no-repeat;
+    background-color: #201E1E;
+    background-position: center;
+}
+.slider-comment .slick-arrow.slick-next {
+	right: -10px;
+	background: url('../img/arrowright.svg') 0 0 / 70% no-repeat;
+    background-color: #201E1E;
+    background-position: center;
+}
+
+.slider-comment .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-comment .slick-dots li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.slider-comment .slick-dots button {
+    font-size: 0;
+    width: 40px;
+    height: 4px;
+    background-color: #201E1E;
+}
+
+.slider-comment .slick-dots li.slick-active button {
+    background-color: #ED2438;
+}
+
+
+@media (max-width: 1024px) { 
+    .comments {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) { 
+    .slider-comment .slick-arrow {
+        top: -8.5%;
+    }
+
+    .slider-comment .slick-arrow.slick-next {
+        right: 20px;
+        background: url(../img/arrowright-black.svg) 0 0 / 70% no-repeat;
+        background-color: #fff;
+        background-position: center;
+    }
+
+    .slider-comment .slick-arrow.slick-prev {
+        right: 80px;
+        left: inherit;
+        background: url(../img/arrowleft-black.svg) 0 0 / 70% no-repeat;
+        background-color: #ffffff;
+        background-position: center;
+    }
+}
+
+
+@media (max-width: 360px) { 
+    .comments {
+        padding: 33px 0;
+    }
+
+    .slider-comment .slick-arrow {
+        width: 34px;
+        height: 34px;
+    }
+
+    .slider-comment .slick-arrow.slick-prev {
+        right: 64px;
+    }
+
+    .slider-comment .slick-arrow.slick-next {
+        right: 14px;
+    }
+}

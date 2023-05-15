@@ -1,0 +1,95 @@
+.favorite {
+    background-color: #F8F9FD;
+    color: #201E1E;
+    padding-bottom: 120px;
+}
+
+.favorite__search {
+    position: relative;
+}
+
+.favorite__search-input {
+    height: 3rem;
+    padding-left: 20px;
+    border: none;
+    width: 100%;
+}
+
+.favorite__search-input[type="text"] {
+    color: #6C6F79;
+}
+
+.favorite__search-input::placeholder {
+    color: #6C6F79;
+}
+
+.favorite__search-img {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+}
+
+
+.favorite__select select {
+    height: 3rem;
+    border: none;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.favorite__search-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.favorite__search-box {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.favorite__select {
+    width: 34%;
+}
+
+.favorite__search {
+    width: 64%;
+}
+
+.favorite__btns {
+    display: flex;
+}
+
+.favorite__btn {
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.favorite__btns svg {
+    fill: #CFD3E3;
+}
+
+.favorite__btns .active svg {
+    fill: #ED2438;
+}
+
+.favorite__btn.active {
+    background-color: #ED24380D;
+}
+
+
+.favorite__cards {
+    padding-top: 40px;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, 19%); выводит 5 карточек в строку*/
+    grid-template-columns: repeat(auto-fill, 16%); 
+    width: 100%;
+    justify-content: space-between;
+    row-gap: 25px;
+}
+

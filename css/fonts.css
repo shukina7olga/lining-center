@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Kelson Sans Regular';
+    src: url('../fonts/kelsonsans_regularru.otf');
+}
+
+@font-face {
+    font-family: 'Kelson Sans Light';
+    src: url('../fonts/kelsonsans_lightru.otf');
+}
+
+@font-face {
+    font-family: 'Kelson Sans Bold';
+    src: url('../fonts/kelsonsans_boldru.otf');
+}
+
+
+
+@font-face {
+    font-family: 'Helvetica Bold';
+    src: url('../fonts/helvetica_bold.otf');
+}
+
+@font-face {
+    font-family: 'Helvetica Light';
+    src: url('../fonts/helvetica_light.otf');
+}
+
+@font-face {
+    font-family: 'Helvetica Regular';
+    src: url('../fonts/helvetica_regular.otf');
+}

@@ -1,0 +1,6 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M35 55L25 65L15 55" stroke="#6C6F79" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4"/>
+<path d="M25 15V65" stroke="#6C6F79" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4"/>
+<path d="M45 25L55 15L65 25" stroke="#6C6F79" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4"/>
+<path d="M55 65V15" stroke="#6C6F79" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4"/>
+</svg>

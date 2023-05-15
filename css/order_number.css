@@ -1,0 +1,125 @@
+.order-number {
+    background-color: #F8F9FD;
+    color: #201E1E;
+    padding-bottom: 120px;
+}
+
+.order-number__mark-process {
+    color: #FFFFFF;
+    background-color: #6C6F79;
+    border-radius: 4px;
+    padding: 4px 16px;
+    margin-right: 17px;    
+}
+
+.order-number__date {
+    color: #6C6F79;
+}
+
+.order-number__box {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.order-number__box-title {
+    margin-bottom: 30px;
+}
+
+.order-number__items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.order-number__item {
+    width: 30%;
+}
+
+.order-number__label {
+    margin-bottom: 10px;
+}
+
+.order-number__empty {
+    color: #6C6F79;
+}
+
+.order-number__box button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F9FD;
+    padding: 15px 30px;
+}
+
+.order-number__box button svg {
+    margin-right: 10px;
+}
+
+.order-number__box button:hover {
+    background-color: #6C6F79;
+}
+
+
+
+.order-number__not-paid {
+    padding: 4px 15px;
+    background-color: #ED2438;
+    color: #ffffff;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.order-number__change-payments {
+    color: #ED2438;
+}
+
+.order-number__back-link {
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: #E7EAF4;
+    color: #201E1E;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.order-number__back-link:hover {
+    color: #FFFFFF;
+    background-color: #ED2438;
+}
+
+.order-number .purchase-table {
+    min-width: 500px;
+}
+
+@media (max-width: 1024px) { 
+    .order-number__box {
+        padding: 15px;
+    }
+
+    .order-number__items {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .order-number__item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .order-number__label {
+        margin-bottom: 0;
+    }
+
+    .order-number__box-title {
+        margin-bottom: 15px;
+    }
+}
+
+
+@media (max-width: 768px) { 
+    .order-number {
+        padding-bottom: 80px;
+    }
+}

@@ -1,0 +1,81 @@
+.warranty {
+    background-color: #F8F9FD;
+    padding-bottom: 100px;
+}
+
+.warranty h2 {
+    padding-bottom: 4.5%;
+}
+
+.warranty__inform-all-text {
+    padding-bottom: 4.5%;
+}
+
+.warranty__inform-box {
+    display: flex;
+}
+
+.warranty__text-box {
+    width: 65%;
+    margin-right: 20px;
+}
+
+.warranty__tabs-box {
+    width: 35%;
+}
+
+.cross-wrap {
+    position: relative;
+}
+.cross {
+    width: 16px;
+    height: 1px;
+    background-color: #000000;
+    border-radius: 5px;
+}
+.move-cross {
+    position: absolute;
+    bottom: 0;
+}
+
+.tab-head:first-child {
+    margin-top: 0;
+}
+
+.tab-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+.tab-text {
+    background-color: #ffffff;
+    padding: 0 30px 30px 30px;
+    display: none;
+}
+
+.tab-text.active {
+    display: block;
+}
+
+.tab-head.active .move-cross {
+    transform: rotate(-90deg);   
+}
+
+.tab-text p {
+    padding-bottom: 4.5%;
+}
+
+
+@media (max-width: 768px) {
+    .warranty__inform-box {
+        flex-direction: column;
+    }
+
+    .warranty__text-box, .warranty__tabs-box {
+        width: 100%;
+    }
+}

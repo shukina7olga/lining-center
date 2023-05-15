@@ -1,0 +1,163 @@
+.basket {
+    background-color: #F8F9FD;
+    color: #201E1E;
+    padding-bottom: 120px;
+}
+
+.basket .purchase-table__row {
+    background-color: #fff;
+}
+
+.basket .purchase-table__head {
+    background-color: transparent;
+}
+
+.basket .purchase-table__row:nth-child(2) {
+    border-top: none;
+}
+
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #ffffff;
+    border: 1px solid #E7EAF4;
+    border-radius: 5px;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #ED2438;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark */
+  .checkbox-container .checkmark:after {
+    top: 6px;
+    left: 8px;
+    width: 3px;
+    height: 6px;
+    border-radius: 2px;
+    border: solid white;
+    border-width: 0px 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.purchase-table__col-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.purchase-table__btns {
+    width: 40px;
+    height: 40px;
+    background: #F8F9FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.purchase-table__btns:hover {
+   background-color: #6C6F79;
+}
+
+.purchase-table__minus {
+    margin-right: 10px;
+}
+
+.purchase-table__plus {
+    margin-left: 10px;
+}
+
+.basket .purchase-table__col {
+    width: 10%;
+    min-width: 100px;
+}
+
+.basket .purchase-table__buy-head {
+    justify-content: center;
+}
+
+.basket .purchase-table__buy {
+    width: 40%;
+}
+
+.basket .purchase-table__col-delete {
+    width: 5%;
+    min-width: 50px;
+}
+
+.purchase-table__col-checkbox-head {
+    padding-left: 3%;
+}
+
+.purchase-table__col-checkbox {
+    width: 5%;
+    padding-left: 3%;
+    min-width: 50px;
+}
+
+.basket .purchase-table__head {
+    position: relative;
+}
+
+.purchase-table__col-checkbox-head label {
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.basket .purchase-table{
+    min-width: 600px;    
+}
+
+.basket .purchase-table__label-grey {
+    margin-top: 5px;
+}
+@media (max-width: 768px) {
+    .basket .purchase-table__col {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 768px) {   
+    .basket {
+        padding-bottom: 80px;
+    }
+
+    .basket .purchase-table__buy {
+        width: 30%;
+        align-items: flex-end;
+    }
+    
+    
+}

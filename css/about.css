@@ -1,0 +1,88 @@
+.about {
+    background-color: #F8F9FD;
+}
+
+.about h2 {
+    padding-bottom: 2%;
+}
+
+.about-box {
+    background-image: url(../img/about/about-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position-x: right;
+    background-position-y: top;
+}
+
+.about__inform-box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7%;
+}
+
+.about__text-box {
+    width: 45%;
+}
+
+.about__text-box p {
+    padding-bottom: 2.6%;
+}
+
+.about__picture-text {
+    color: #6C6F79;
+    text-align: center;
+}
+
+.about__picture-title {
+    font-family: 'Kelson Sans Bold';
+    text-align: center;
+}
+
+.about__picture-box {
+    display: flex;
+    justify-content: space-between;
+    width: 54%;
+}
+
+.about__picture-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32%;
+}
+
+
+.thanks-card {
+    padding: 20px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .about__inform-box {
+        flex-direction: column;
+    }   
+
+    .about__picture-box {
+        width: 100%;
+    }
+
+    .about__text-box {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 475px) {
+    .about__picture-box {
+        flex-direction: column;
+    } 
+
+    .about__picture-item { 
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,108 @@
+.contacts {
+    position: relative;
+    background-color: #201E1E;
+}
+
+.contacts-box {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
+    background-color: #201E1E;
+    
+}
+
+.contacts-box-content {
+    padding: 7%;
+    color: white;
+}
+
+.contacts-box-content img {
+    width: 25%;
+}
+
+.contacts-box__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.contacts-box__title {
+    color: white;
+    font-size: calc(20px + 10*(100vw / 1920));
+    line-height: 36px; 
+    font-weight: 400; 
+    margin-bottom: 5%;  
+}
+
+
+.contacts-box__inform-address {
+    font-size: calc(15px + 3*(100vw / 1920));
+    line-height: 29px;
+    font-weight: 400;
+    margin-bottom: 4%;
+}
+
+.contacts-box__inform-subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    margin-bottom: 2%;
+    margin-top: 4%;
+}
+
+.contacts-box__inform-time {
+    font-size: calc(14px + 4*(100vw / 1920));
+    font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 2%;   
+}
+
+.contacts-box__inform-phone {
+    font-size: calc(20px + 5*(100vw / 1920));
+}
+
+
+
+@media (max-width: 1190px) {
+    .contacts-box {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .contacts-box__title {
+        font-size: calc(20px + (10+10*0.7)*((100vw - 320px) / 1920));
+    }
+
+    .contacts-box__inform-address {
+        font-size: calc(15px + (3+3*0.7)*((100vw - 320px) / 1920));
+    }
+
+    .contacts-box__inform-time {
+        font-size: calc(14px + (4+4*0.7)*((100vw - 320px) / 1920));
+    }
+
+    .contacts-box__inform-phone {
+        font-size: calc(20px + (5+5*0.7)*((100vw - 320px) / 1920));
+    }
+
+    .footer-map {
+        height: 331px !important;
+    }
+
+    .contacts-box {
+        width: 100%;
+        position: unset;
+        transform: inherit;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .contacts-box-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

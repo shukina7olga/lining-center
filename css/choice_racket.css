@@ -1,0 +1,102 @@
+.choice-racket {
+    display: flex;
+    color: #FFFFFF;
+}
+
+.choice-racket__choice, .choice-racket__social {
+    width: 50%;
+    padding: 40px;
+}
+
+.choice-racket__choice {
+    background-color: #201E1E;
+}
+
+.choice-racket__social {
+    background-color: #BB1727;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(/img/choice-racket__social.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: bottom;
+}
+
+.choice-racket__social button {
+    padding: 15px 40px;
+    background-color: #201E1E;
+    font-size: 15px;
+    line-height: 160%;
+    color: #FFFFFF;
+}
+
+.choice-racket__social button:hover {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+}
+
+.choice-racket__title {
+    padding-bottom: 10px;
+}
+
+
+.choice-racket__choice .video-block {
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 1440px) { 
+    .choice-racket__choice, .choice-racket__social {
+        padding: 30px;
+    }
+    
+    .choice-racket__title {
+        padding-bottom: 16px;
+    }
+
+    .choice-racket__choice .video-block {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .choice-racket__choice, .choice-racket__social {
+        padding: 20px;
+    }
+
+    .choice-racket__social button {
+        padding: 10px 36px;
+    }
+
+    .choice-racket__choice .video-block {
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 360px) { 
+    .choice-racket {
+        flex-direction: column;
+    }
+
+    .choice-racket__choice, .choice-racket__social {
+        width: 100%;
+    }
+
+    .choice-racket__title {
+        padding-bottom: 10px;
+    }
+
+    .choice-racket__choice .video-block {
+        margin-top: 10px;
+    }
+
+    .choice-racket__social {
+        min-height: 324px;
+    }
+
+    /* .stretching-rackets .container {   // меняет вообще весь контейненр, плывет вся страница
+        width: 100%;
+    } */
+}
