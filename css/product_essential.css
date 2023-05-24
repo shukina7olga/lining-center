@@ -1,0 +1,73 @@
+.product-essential {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fff;
+}
+
+
+.product-essential__title {
+    padding-bottom: 15px;
+}
+
+.product-essential__p {
+    padding-bottom: 30px;
+}
+
+.product-essential__red {
+    color: #ED2438;
+}
+
+.product-essential__title-mini {
+    font-family: 'Kelson Sans Bold';
+    padding-bottom: 5px;
+}
+
+.product-essential__sub {
+    padding-bottom: 12px;
+}
+
+.product-essential__text {
+    padding-bottom: 12px;
+}
+
+
+.product-essential__guarantee-box {
+    height: max-content;
+    padding: 40px;
+    background: #F8F9FD url(../img/tabs-bg-white.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-left: 5%;
+}
+
+.product-essential__guarantee-title {
+    font-family: 'Kelson Sans Bold';
+    padding-bottom: 7%;    
+}
+
+.product-essential__guarantee-text {
+    padding-bottom: 12%;
+}
+
+
+@media (max-width: 1024px) {
+    .product-essential {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .product-essential__guarantee-box {
+        margin-left: 0;
+        margin-top: 30px;
+        padding: 25px;
+    }
+
+    .product-essential__guarantee-title {
+        padding-bottom: 2%;    
+    }
+    
+    .product-essential__guarantee-text {
+        padding-bottom: 20px;
+    }
+}

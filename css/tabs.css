@@ -4,12 +4,14 @@
 
 
 .tabs__item {
+    display: inline-block;
     justify-content: center;
     align-items: center;
     color: #ffffff;
     background-color: #201E1E;
     padding: 20px 40px;
     margin-right: 2px;
+    margin-top: 5px;
 }
 
 .tabs__item:hover {
@@ -24,13 +26,19 @@
 .tabs__block {
     /* скрыть контент по умолчанию */
     display: none;
-    padding-top: 30px;
 }
 
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
 #tab3:checked ~ #content3,
 #tab4:checked ~ #content4  {
+  display: block;
+}
+
+#slider-tab1:checked ~ #slider-content1,
+#slider-tab2:checked ~ #slider-content2,
+#slider-tab3:checked ~ #slider-content3,
+#slider-tab4:checked ~ #slider-content4  {
   display: block;
 }
 
@@ -45,9 +53,15 @@
     }
 }
 
+@media (max-width: 425px) { 
+    .tabs__item {
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+}
+
 @media (max-width: 360px) { 
     .tabs__item {
-        font-size: 13px;
         padding: 10px 5px;
     }
 }

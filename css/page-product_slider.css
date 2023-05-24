@@ -32,6 +32,9 @@
     overflow: hidden;
 }
 
+.slider-vertical .slick-current img {
+    filter: opacity(0.5);
+}
 
 /* большой слайдер товара*/
 .slider-product .slick-track{

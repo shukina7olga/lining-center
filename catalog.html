@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Избранное</title>
+    <title>Каталог</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -221,7 +221,7 @@
         </button>
     </div>
     
-    <section class="favorite">
+    <section class="catalog">
         <div class="container">
             <ul class="breadcrumbs">
                 <li>
@@ -229,62 +229,62 @@
                 </li>
                 <span>•</span> 
                 <li>
-                    <a class="active" href="">Избранное</a>
+                    <a class="active" href="">Каталог</a>
                 </li>
             </ul>
-            <h2>Избранное</h2>
-            <div class="grey-line"></div>
-            <div class="favorite__search-wrap">
-                <div class="favorite__search-box">            
-                    <div class="favorite__select">
+            <h2>Каталог</h2>
+
+
+            <div class="catalog__header">
+                <p class="text-16-light">
+                    Интернет-магазин «LI-NING Сenter» предлагает широкий выбор по доступным ценам. 
+                    Чтобы купить , достаточно выбрать понравившуюся модель и добавить в корзину.
+                    Мы доставим товар любым удобным для Вас способом за короткие сроки.
+                </p>
+
+                <div class="catalog__search-wrap">           
+                    <div class="catalog__select">
                         <select class="text-14-light" name="" id="">
-                            <option value="">Пушкино</option>
-                            <option value="">Пушкино</option>
-                            <option value="">Пушкино</option>
+                            <option value="">По популярности</option>
+                            <option value="">По названию</option>
+                            <option value="">По цене</option>
                         </select>
                     </div>
-
-                    <div class="favorite__search">
-                        <input class="favorite__search-input text-14-light" type="text" placeholder="Поиск...">
-                        <div class="favorite__search-img">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M16.4434 16.4438L20.9996 21.0001" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                             
-                        </div> 
-                    </div>
+    
+                    <div class="catalog__btns">
+                        <button class="catalog__btn ">
+                            <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="4" height="6" rx="1" fill=""/>
+                                <rect x="5.5" width="4" height="6" rx="1" fill=""/>
+                                <rect x="11" width="4" height="6" rx="1" fill=""/>
+                                <rect y="8" width="4" height="6" rx="1" fill=""/>
+                                <rect x="5.5" y="8" width="4" height="6" rx="1" fill=""/>
+                                <rect x="11" y="8" width="4" height="6" rx="1" fill=""/>
+                                <rect x="16.5" width="4" height="6" rx="1" fill=""/>
+                                <rect x="16.5" y="8" width="4" height="6" rx="1" fill=""/>
+                            </svg>
+                        </button>
+    
+                        <button class="catalog__btn active">
+                            <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="3" height="6" rx="1" fill=""/>
+                                <rect x="4" width="3" height="6" rx="1" fill=""/>
+                                <rect x="8" width="3" height="6" rx="1" fill=""/>
+                                <rect y="8" width="3" height="6" rx="1" fill=""/>
+                                <rect x="4" y="8" width="3" height="6" rx="1" fill=""/>
+                                <rect x="8" y="8" width="3" height="6" rx="1" fill=""/>
+                                <rect x="12" width="3" height="6" rx="1" fill=""/>
+                                <rect x="12" y="8" width="3" height="6" rx="1" fill=""/>
+                                <rect x="16" width="3" height="6" rx="1" fill=""/>
+                                <rect x="16" y="8" width="3" height="6" rx="1" fill=""/>
+                            </svg>
+                        </button>                    
+                    </div>                
                 </div>
-
-                <div class="favorite__btns">
-                    <button class="favorite__btn ">
-                        <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="4" height="6" rx="1" fill=""/>
-                            <rect x="5.5" width="4" height="6" rx="1" fill=""/>
-                            <rect x="11" width="4" height="6" rx="1" fill=""/>
-                            <rect y="8" width="4" height="6" rx="1" fill=""/>
-                            <rect x="5.5" y="8" width="4" height="6" rx="1" fill=""/>
-                            <rect x="11" y="8" width="4" height="6" rx="1" fill=""/>
-                            <rect x="16.5" width="4" height="6" rx="1" fill=""/>
-                            <rect x="16.5" y="8" width="4" height="6" rx="1" fill=""/>
-                        </svg>
-                    </button>
-
-                    <button class="favorite__btn active">
-                        <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="3" height="6" rx="1" fill=""/>
-                            <rect x="4" width="3" height="6" rx="1" fill=""/>
-                            <rect x="8" width="3" height="6" rx="1" fill=""/>
-                            <rect y="8" width="3" height="6" rx="1" fill=""/>
-                            <rect x="4" y="8" width="3" height="6" rx="1" fill=""/>
-                            <rect x="8" y="8" width="3" height="6" rx="1" fill=""/>
-                            <rect x="12" width="3" height="6" rx="1" fill=""/>
-                            <rect x="12" y="8" width="3" height="6" rx="1" fill=""/>
-                            <rect x="16" width="3" height="6" rx="1" fill=""/>
-                            <rect x="16" y="8" width="3" height="6" rx="1" fill=""/>
-                        </svg>
-                    </button>                    
-                </div>                
             </div>
+
+
+            <div class="grey-line"></div>
 
             <div class="favorite__cards">
                 <div class="product-card">

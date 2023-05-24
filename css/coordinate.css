@@ -1,0 +1,433 @@
+.coordinate {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.coordinate__plane {
+    width: 52%;
+    position: relative;
+}
+
+.coordinate__plane-item {
+    position: absolute;
+    font-family: 'Kelson Sans Bold';
+    color: #fff;
+    white-space: nowrap;
+    font-size: 12px;
+    padding: 0 10px;
+    border-radius: 8px;
+}
+.coordinate__plane-item.yellow {
+    background-color: #F1A209;
+}
+.coordinate__plane-item.blue {
+    background-color: #1489E0;
+}
+.coordinate__plane-item.green {
+    background-color: #25B053;
+}
+.coordinate__plane-item.black {
+    background-color: #201E1E;
+}
+
+.coordinate__plane-item:nth-child(1) {
+    top: 8%;
+    left: 20%;   
+}
+.coordinate__plane-item:nth-child(2) {
+    top: 17%;
+    left: 46%;
+}
+.coordinate__plane-item:nth-child(3) {
+    top: 25%;
+    left: 46%;    
+} 
+.coordinate__plane-item:nth-child(4) {
+    top: 40%;
+    left: 40%;
+}
+.coordinate__plane-item:nth-child(5) {
+    top: 35%;
+    left: 57%; 
+}
+.coordinate__plane-item:nth-child(6) {
+    top: 41%;
+    left: 32%;    
+}
+
+
+
+
+.coordinate__information {
+    width: 45%;
+}
+
+.coordinate__feature-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #E7EAF4;
+}
+
+.coordinate__feature-title {
+    font-family: 'Kelson Sans Regular';
+    padding-bottom: 5px;
+}
+
+.coordinate__feature-text {
+    font-family: 'Kelson Sans Regular';
+    margin-left: 10px;
+    text-align: right;
+}
+
+.coordinate__choice {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+
+.coordinate__checkbox {
+   margin-bottom: 15px;
+}
+
+.coordinate__checkbox input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.coordinate__checkbox input + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    color: #6C6F79;
+    font-size: calc(12px + 4*(100vw / 1920));
+    line-height: 160%;
+}
+
+.coordinate__checkbox input + label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.coordinate__checkbox input:checked + label {
+    font-family: 'Kelson Sans Bold';
+    color: #201E1E;
+}
+
+.coordinate__checkbox input + .mega::before {
+    background-color: #ED2438;
+}
+
+.coordinate__checkbox input + .ultra::before {
+    background-color: #1489E0;
+}
+
+.coordinate__checkbox input + .extra::before {
+    background-color: #F1A209;
+}
+
+.coordinate__checkbox input + .multi::before {
+    background-color: #25B053;
+}
+
+.coordinate__checkbox input + .pro::before {
+    background-color: #201E1E;
+}
+
+.coordinate__checkbox input + .club::before {
+    background-color: #AB139C;
+}
+
+
+/* .coordinate__compass-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.coordinate__compass-result {
+    font-size: 12px;
+    line-height: 160%;
+    text-align: center;
+    color: #201E1E;
+    width: 276px;
+    padding-top: 5px;
+}
+
+.coordinate__compass {
+    position: relative;
+    background-color: #F8F9FD;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    width: 276px;
+    aspect-ratio: 1 / 1;
+}
+
+.coordinate__compass-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+
+}
+
+.coordinate__compass-option {
+    color: #6C6F79;
+    font-size: 12px;
+    line-height: 160%;
+}
+
+.coordinate__compass-option.active {
+    color: #201E1E;
+    font-family: 'Kelson Sans Bold';
+}
+
+.coordinate__compass-field {
+    display: flex;
+}
+.coordinate__compass-field:nth-child(1)::after {
+    content: "";
+    width: 1px;
+    height: 64px;
+    background-color: #C2C9E1;
+    position: absolute;
+    right: 50%;
+    top: 0;
+}
+.coordinate__compass-field:nth-child(1)::before {
+    content: "";
+    width: 64px;
+    height: 1px;
+    background-color: #C2C9E1;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.coordinate__compass-field:nth-child(2) {
+    justify-content: flex-end;
+}
+.coordinate__compass-field:nth-child(3) {
+    align-items: flex-end;
+}
+.coordinate__compass-field:nth-child(4) {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.coordinate__compass-field:nth-child(4)::after {
+    content: "";
+    width: 64px;
+    height: 1px;
+    background-color: #C2C9E1;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.coordinate__compass-field:nth-child(4)::before {
+    content: "";
+    width: 1px;
+    height: 64px;
+    background-color: #C2C9E1;
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+}
+
+
+.coordinate__feature-1024 {
+    display: none;
+}
+
+@media (max-width: 1440px) {
+    .coordinate__choice {
+        padding-top: 70px;
+    }
+    .coordinate__plane {
+        width: 48%;
+    }
+    .coordinate__information {
+        width: 50%;
+    }
+    /* .coordinate__plane svg {
+        max-width: 554px;
+        aspect-ratio: 1/1;
+    } */
+
+    .coordinate__feature-title {
+        border-bottom: 1px solid #E7EAF4;
+    }
+}
+
+@media (max-width: 1024px) {
+    .coordinate__choice {
+        flex-direction: column;
+    }
+
+    .coordinate__feature {
+        display: none;
+    }
+
+    .coordinate__feature-1024 {
+        display: block;
+        background-color: #fff;
+        padding: 30px;
+    }
+
+    .coordinate__choice {
+        padding-top: 0px;
+    }
+
+    .coordinate__information {
+        width: 35%;
+    }
+
+    .coordinate__plane {
+        width: 60%;
+    }
+
+    .coordinate__compass-result {
+        width: 245px;
+    }
+
+    .coordinate__compass {
+        width: 245px;
+    }
+
+    .coordinate__compass-arrow svg {
+        width: 85px;
+        height: 85px;
+    }
+}
+
+@media (max-width: 768px) {
+    .coordinate__checkbox input + label {
+        font-size: calc(12px + (4+4*0.7)*((100vw - 320px) / 1920)); 
+    }
+
+    .coordinate__checkbox {
+        margin-top: 2px;
+    }
+
+    .coordinate {
+        padding: 20px;
+    }
+
+    .coordinate__compass-result {
+        width: 215px;
+    }
+
+    .coordinate__compass {
+        width: 215px;
+    }
+
+    .coordinate__feature-1024 {
+        display: none;
+    }
+
+    .coordinate__compass-arrow svg {
+        width: 75px;
+        height: 75px;
+    }
+
+    .coordinate__checkbox {
+        margin-bottom: 5px;
+    }
+
+    .coordinate__plane-item {
+        font-size: 10px;
+    }
+
+    .coordinate__information {
+        width: 38%;
+    }
+
+    .coordinate__plane {
+        width: 60%;
+    }
+
+    .coordinate__compass-field:nth-child(4)::after {
+        width: 49px;
+    }
+    .coordinate__compass-field:nth-child(4)::before {
+        height: 49px;
+    }
+
+    .coordinate__compass-field:nth-child(1)::after {
+        height: 49px;
+    }
+    .coordinate__compass-field:nth-child(1)::before {
+        width: 49px;
+    }
+}
+
+
+@media (max-width: 610px) {
+    .coordinate {
+        flex-direction: column;
+    }
+
+    .coordinate__choice {
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .coordinate__information {
+        width: 100%;
+    }
+
+    .coordinate__plane {
+        width: 100%;
+    }
+}
+
+@media (max-width: 360px) {
+    .coordinate__plane-item {
+        font-size: 8px;
+        padding: 0 5px;
+    }
+
+    .coordinate__compass-arrow svg {
+        width: 65px;
+        height: 65px;
+    }
+
+    .coordinate__compass-field:nth-child(4)::after {
+        width: 42px;
+    }
+    .coordinate__compass-field:nth-child(4)::before {
+        height: 42px;
+    }
+
+    .coordinate__compass-field:nth-child(1)::after {
+        height: 42px;
+    }
+    .coordinate__compass-field:nth-child(1)::before {
+        width: 42px;
+    }
+
+    .coordinate__compass-result {
+        width: 182px;
+    }
+
+    .coordinate__compass {
+        width: 182px;
+    }
+}
+

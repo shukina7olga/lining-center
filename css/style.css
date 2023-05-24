@@ -26,6 +26,7 @@
 @import 'page-product_slider.css';
 @import 'product_tabs.css';
 @import 'tabs.css';
+@import 'coordinate.css';
 @import 'page-product.css';
 
 @import 'empty.css';
@@ -46,6 +47,18 @@
 @import 'basket.css';
 @import 'favorite.css';
 @import 'product_card.css';
+
+
+@import 'product_essential.css';
+@import 'product_feedback.css';
+@import 'product_testdrive.css';
+@import 'product_color_size.css';
+@import 'tabs_slider.css';
+@import 'comparison.css';
+/* @import 'comparison-test-columns.css'; */
+@import 'catalog.css';
+
+
 
 
 

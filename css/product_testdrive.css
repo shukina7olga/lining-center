@@ -1,0 +1,123 @@
+.product-testdrive {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.product-testdrive__inform {
+    width: 49%;
+}
+
+.product-testdrive__inform-title {
+    padding-bottom: 20px;
+}
+
+.product-testdrive__inform-subtitle {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.product-testdrive__list {
+    margin-left: 20px;
+}
+
+.product-testdrive__list li {
+    font-family: 'Kelson Sans Bold';
+    list-style: disc;
+    /* list-style-position:inside; сдвинет точки вправо и строку, но не абзац*/
+    color: #ED2438;
+    padding-bottom: 10px;
+}
+.product-testdrive__list span {
+    color: #201E1E; 
+    font-family: 'Kelson Sans Light';
+}
+
+.product-testdrive__list--numeric li {
+    list-style: auto;
+}
+
+
+
+.product-testdrive__form {
+    width: 49%;
+    padding-top: 35px;
+}
+
+.product-testdrive .stretching__form-top-data .text-field {
+    width: 48.5%;
+}
+
+.product-testdrive__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.product-testdrive__wrap p {
+    width: 71%;
+}
+
+.product-testdrive__wrap a {
+    color: #ED2438;
+}
+
+.product-testdrive__wrap button {
+    width: 27%;
+}
+
+@media (max-width: 1440px) {
+    .product-testdrive__wrap p {
+        width: 59%;
+    }
+
+    .product-testdrive__wrap button {
+        width: 39%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .product-testdrive__form {
+       padding-top: 60px; 
+    }
+    
+
+    .product-testdrive {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .product-testdrive__inform {
+        width: 100%;
+    }
+
+    .product-testdrive__form {
+        width: 100%;
+        padding-top: 5px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .product-testdrive .stretching__form-top-data .text-field {
+        width: 100%;
+    }
+
+    .product-testdrive__wrap {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .product-testdrive__wrap p {
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .product-testdrive__wrap button {
+        width: 100%;
+    }
+}
+

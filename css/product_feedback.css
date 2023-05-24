@@ -1,0 +1,131 @@
+.product-feedback {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 40px;
+}
+
+
+.product-feedback__cards {
+    width: 70%;
+}
+
+.product-feedback__card:first-child {
+    margin-top: 0;
+}
+
+.product-feedback__card {
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border: 1px solid #E7EAF4;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.product-feedback__card-inform {
+    width: 90%;
+}
+
+.product-feedback__card-icon {
+    background: #201E1E;
+    border-radius: 40px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-feedback__card-icon p {
+    color: #fff;
+    font-family: 'Kelson Sans Bold';
+    text-transform: uppercase;
+}
+
+.product-feedback__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-feedback__head-date {
+    color: #6C6F79;
+}
+
+.product-feedback__grade {
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-feedback__title {
+    font-family: 'Kelson Sans Bold';
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+
+
+
+.product-feedback__question {
+    width: 27%;
+}
+
+.product-feedback__question {
+    height: max-content;
+}
+
+.product-feedback__question-title {
+    padding-bottom: 20px;
+}
+
+.product-feedback__question-text {
+    padding-bottom: 40px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .product-feedback {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .product-feedback__cards {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .product-feedback__question {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-feedback__card {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .product-feedback__card-inform {
+        width: 100%;
+    }
+
+    .product-feedback__card-icon {
+        margin-bottom: 10px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .product-feedback__question-text {
+        padding-bottom: 25px;
+    }
+}
+
+@media (max-width: 425px) {
+    .product-feedback__grade {
+        width: 23%;
+    }
+}

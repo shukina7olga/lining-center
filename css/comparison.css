@@ -1,0 +1,200 @@
+.comparison {
+    background-color: #F8F9FD;
+    color: #201E1E;
+    padding-bottom: 120px;
+}
+
+.comparison__show-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comparison__show-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.comparison__show-links a {
+    color: #6C6F79;
+    margin-left: 20px;
+}
+
+.comparison__show-links .active {
+    color: #ED2438;
+    position: relative;
+}
+
+
+.comparison__show-links .active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px; 
+    background-color: #ED2438;
+    position: absolute;
+    bottom: -4px;
+}
+
+
+.comparison__show-btn {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.comparison__show-btn p {
+    margin-left: 10px;
+}
+
+
+
+
+.comparison__cards {
+    background-color: #fff;
+    margin-top: 20px;
+    position: relative;
+    overflow: auto;
+}
+
+.comparison__cards-table {
+    border-collapse: collapse;
+    border: 1px solid #E7EAF4;
+    overflow-x: scroll;
+    min-width: 500px;
+}
+
+.comparison__cards-table tr {
+    border-bottom: 1px solid #E7EAF4;
+}
+
+.comparison__cards-table tr.comparison__cards-head {
+    border-bottom: none;
+}
+
+.comparison__cards-table tr.comparison__cards-head td {
+    padding-bottom: 0;
+    vertical-align: top;
+}
+
+.comparison__cards-table td {
+    padding: 20px;
+    width: 250px;
+    border-left: 1px solid #E7EAF4;
+    vertical-align: bottom;
+}
+
+.comparison__card-head {
+    position: relative;
+}
+
+.comparison__card-head-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.comparison__card-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    background-color: #F8F9FD;
+}
+
+
+.comparison__card-img {
+    height: 279px;
+    width: 195px;
+    padding-bottom: 20px;
+}
+.comparison__card-img img {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+}
+
+.comparison__card-title, .comparison__card p {
+    line-height: 19px;
+}
+.comparison__card-title {
+    display: block;
+}
+
+.comparison__card-sign {
+    color: #6C6F79;
+    font-size: 12px;
+    line-height: 14px;
+    padding-bottom: 5px;
+}
+
+
+
+.comparison__cards::-webkit-scrollbar {
+    height: 5px;
+}
+
+.comparison__cards::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.comparison__cards::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #E7EAF4;
+}
+
+
+@media (max-width: 768px) {
+    .comparison {
+        padding-bottom: 40px;
+    }
+
+    .comparison__show-wrap {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .comparison__show-btn {
+        padding-top: 20px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .comparison__cards-table td {
+        padding: 7px;
+    }
+
+    .comparison__card-img {
+        height: 240px;
+        width: 170px;
+        padding-bottom: 0px;
+    }
+
+    .comparison__card-btn {
+        width: 25px;
+        height: 25px;
+    }
+
+    .comparison__card-btn svg {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    .comparison__show-links {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .comparison__show-links a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .comparison__show-wrap {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}

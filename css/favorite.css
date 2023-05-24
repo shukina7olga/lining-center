@@ -86,10 +86,60 @@
 .favorite__cards {
     padding-top: 40px;
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, 19%); выводит 5 карточек в строку*/
+    /* выводит 5 карточек в строку */
+    /* grid-template-columns: repeat(auto-fill, 19%);  */
+    /* выводит 6 карточек в строку */
     grid-template-columns: repeat(auto-fill, 16%); 
     width: 100%;
     justify-content: space-between;
     row-gap: 25px;
+
 }
 
+
+@media (max-width: 1024px) {
+    .favorite__btns {
+        display: none;
+    }
+
+    .favorite__cards {
+        grid-template-columns: repeat(auto-fill, 24%);
+    }
+}
+
+@media (max-width: 768px) {
+    .favorite {
+        padding-bottom: 40px;
+    }
+    .favorite__cards {
+        padding-top: 20px;
+        row-gap: 15px;
+        grid-template-columns: repeat(auto-fill, 32%);
+    }
+
+    .favorite__search-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 525px) {
+    .favorite__cards {
+        row-gap: 10px;
+        grid-template-columns: repeat(auto-fill, 49%);
+    }
+}
+
+@media (max-width: 360px) {
+    .favorite__search-box {
+        flex-direction: column-reverse;
+    }
+
+    .favorite__select {
+        width: 100%;
+    }
+
+    .favorite__search {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

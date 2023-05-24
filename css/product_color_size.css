@@ -1,0 +1,231 @@
+.page-product__color-select {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.page-product__color-title {
+    margin-right: 17px;
+}
+
+.page-product__color-box {
+    margin-right: 10px;
+}
+
+.page-product__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.page-product__checkmark.red {
+    background-color: #ED2438;
+}
+.page-product__checkmark.grey {
+    background-color: #6C6F79;
+}
+.page-product__checkmark.black {
+    background-color: #201E1E;
+}
+
+.checkbox-container input:checked ~ .page-product__checkmark:after {
+    display: block;
+}
+
+.page-product__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container .page-product__checkmark:after {
+    top: 7px;
+    left: 17px;
+    width: 5px;
+    height: 10px;
+    border-radius: 2px;
+    border: solid white;
+    border-width: 0px 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+
+
+
+
+
+.page-product__size-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+.page-product__size-type {
+    display: inline-block;
+    color: #6C6F79;
+    background-color: transparent;
+}
+
+.page-product__size-type.active {
+    font-family: 'Kelson Sans Bold';
+    color: #201E1E;
+}
+
+.page-product__size-btns {
+    display: grid;
+    /* justify-content: center; */
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(77px, max-content));
+    width: 100%;
+} 
+
+.page-product__size-btns button {
+    padding: 18px 24px;
+    background-color: #F8F9FD;
+    color: #201E1E;
+    border-radius: 3px;
+}
+
+.page-product__size-btns button.active {
+    font-family: 'Kelson Sans Bold';
+    color: #201E1E;
+    border: 1px solid #201E1E;
+}
+
+.page-product__size-btns button.disable {
+    border:  none;
+    color: #D3D6E0;
+}
+
+
+
+.size-chart {
+    background-color: #fff;
+    padding: 40px 40px 0  40px;
+}
+
+.size-chart__notice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    background-color: #F8F9FD;
+}
+
+.size-chart__notice p {
+    width: 94%;
+    margin-left: 10px;
+}
+
+
+.size-chart__table-box {
+    position: relative;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+.size-chart table {
+    border-collapse: collapse;
+    overflow-x: scroll;
+    width: 100%;
+    min-width: 500px;
+}
+
+.size-chart__table-box::-webkit-scrollbar {
+    height: 5px;
+}
+
+.size-chart__table-box::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.size-chart__table-box::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #E7EAF4;
+}
+
+.size-chart__table-head {
+    font-family: 'Kelson Sans Bold';
+}
+
+.size-chart table td {
+    padding: 10px;
+}
+
+.size-chart table tr {
+    border-top: 1px solid #E7EAF4;
+    border-bottom: 1px solid #E7EAF4;
+}
+
+
+
+.page-product__simple-feature {
+    width: 48%;
+}
+
+
+
+.product-size .product-testdrive__inform {
+    width: 60%;
+}
+
+.product-size  .product-testdrive__form {
+    width: 38%;
+    padding-top: 0;
+}
+
+.product-size  .product-testdrive__form  img {
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+    .product-size .product-testdrive__inform {
+        width: 100%;
+    }
+    
+    .product-size  .product-testdrive__form {
+        width: 50%;
+        margin: auto;
+        padding-top: 0;
+    }
+
+
+    .size-chart {
+        background-color: #fff;
+        padding: 20px 20px 0  20px;
+    }
+
+    .size-chart__notice  {
+        padding: 15px 10px;
+    }
+
+
+    .page-product__simple-feature {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-size  .product-testdrive__form {
+        width: 100%;
+    }
+
+    .page-product__color-select {
+        padding-top: 0;
+    }
+    .page-product__size-header {
+        flex-direction: column;
+    }
+
+    .page-product__size-btns {
+        justify-content: center;
+    }
+}

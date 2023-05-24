@@ -1,0 +1,155 @@
+.more-products {
+    background-color: #F8F9FD;
+    padding-bottom: 80px;
+}
+
+
+.more-products .tabs {
+    width: 81%;
+}
+
+.more-products__title, .more-products__btn {
+    display: none;
+}
+
+/* the slides */
+.tabs-slider .slick-slide {
+    margin: 0 7px;
+}
+/* the parent */
+.tabs-slider .slick-list {
+    margin: 0 -7px;
+}
+
+.tabs-slider {
+    padding-top: 25px;
+    min-width: 0;
+}
+
+.tabs-slider {
+    position: relative;
+}
+.tabs-slider .product-card {
+    height: 100%;
+}
+.tabs-slider .product-card__img-box {
+    min-height: 60%;
+}
+.tabs-slider .product-card__inform-box {
+    min-height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+
+.tabs-slider .slick-arrow {
+    position: absolute;
+    top: 38%;
+    z-index: 1000;
+    font-size: 0;
+    width: 60px;
+    height: 60px;
+}
+
+.tabs-slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url(../img/miniLeftArrow.svg) no-repeat;
+}
+.tabs-slider .slick-arrow.slick-next {
+    right: -30px;
+    background: url(../img/miniRightArrow.svg) no-repeat;
+}
+
+.tabs-slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabs-slider .slick-dots li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.tabs-slider .slick-dots button {
+    font-size: 0;
+    width: 40px;
+    height: 4px;
+    background-color: #201E1E;
+}
+
+.tabs-slider .slick-dots li.slick-active button {
+    background-color: #ED2438;
+}
+
+
+@media (max-width: 1440px) { 
+    .more-products .tabs {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) { 
+    .more-products {
+        padding-bottom: 60px;
+    }
+}
+
+
+@media (max-width: 360px) { 
+    .more-products {
+        padding-bottom: 0;
+    }
+
+    .tabs-slider {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .tabs-slider .slider__item {
+        width: 49%;
+        padding-bottom: 7px;
+    }
+
+
+    .more-products .tabs__item {
+        display: none;
+    }
+
+    .more-products__title {
+        display: block;
+        font-size: 20px;
+    }
+
+    .more-products__btn {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 20px 0;
+        background-color: #ffffff;
+        color: #201E1E;
+        text-transform: uppercase;
+    }
+
+    .more-products__btn:hover {
+        background-color: #ED2438;
+        color: #ffffff;
+    }
+
+    .tabs-slider .product-card__img-box {
+        min-height: inherit;
+    }
+    .tabs-slider .product-card__inform-box {
+        min-height: inherit;
+    }
+
+    .more-products .tabs__block {
+        display: block;
+        padding-bottom: 40px;
+    }
+
+
+}
