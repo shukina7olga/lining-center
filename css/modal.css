@@ -1,0 +1,259 @@
+.modal {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    color: #201E1E;
+    background-color: rgba(0, 0, 0, 0.747);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+}
+
+.modal:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.modal__content {
+    position: relative;
+    background-color: #fff;
+    color: black;
+    padding: 60px;
+}
+
+.modal__area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.modal__close {
+    display: block;
+    position: absolute;
+    right: 14px;
+    top: 14px;
+}
+
+.modal__content {
+    width: 35%;
+}
+
+
+.modal__title {
+    text-align: center;
+}
+
+.modal__remember-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.modal__remember-link {
+    color: #ED2438;
+}
+
+.modal__btn {
+    margin-top: 20px;
+    color: #fff;
+    background-color: #ED2438;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    width: 100%;
+}
+
+.modal__btn:hover {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.modal__generate-box {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.modal__generate-link {
+    color: #ED2438;
+}
+
+.password__btn-box {
+    position: relative;
+}
+
+.password__btn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 15px;
+    top: 50%;
+    background: url(../img/closed-eye.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.password__btn.active {
+    background: url(../img/open-eye.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+.basket-modal .modal__content {
+    padding: 40px;
+    width: max-content;
+}
+
+.basket-modal .modal__btn {
+    margin-top: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.basket-modal__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    width: 100%;
+}
+
+.basket-modal__btn svg {
+    margin-right: 10px;
+}
+
+.basket-modal__btn--grey {
+    color: #201E1E;
+    background-color: #F8F9FD;
+}
+
+
+.basket-modal__product img {
+    width: 96px;
+    height: 120px;  
+    object-fit: cover;
+}
+
+.basket-modal__product {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.basket-modal__count-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.basket-modal__product-close {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    background-color: transparent;
+}
+
+.basket-modal__inform {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.basket-modal__product-name {
+    max-width: 327px;
+}
+
+
+.basket-long-btns .modal__content {
+    padding: 0 !important;
+}
+
+.basket-long-btns .basket-modal__products {
+    margin: 0px 40px 0px 40px;
+}
+
+.basket-long-btns .basket-modal__title-wrap {
+    margin: 40px 40px 0px 40px;
+}
+
+@media (max-width: 1024px) {
+    .modal__content {
+        width: 45%;
+    }
+
+    .basket-modal .modal__content {
+        padding: 20px;
+    }
+
+
+    .basket-long-btns .basket-modal__products {
+        margin: 0px 20px 0px 20px;
+    }
+    
+    .basket-long-btns .basket-modal__title-wrap {
+        margin: 20px 20px 0px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal__content {
+        width: 65%;
+    }
+
+    .modal__generate-box, .modal__remember-box {
+        margin-top: 20px;
+    }
+
+    .modal__body {
+        margin-bottom: 100px;
+    }
+}
+
+
+@media (max-width: 565px) {
+    .modal__content {
+        width: 85%;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 425px) {
+    .modal__content {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .basket-modal .modal__content {
+        padding: 10px;
+    }
+
+    .basket-modal__inform {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .basket-long-btns .basket-modal__products {
+        margin: 0px 10px 0px 10px;
+    }
+    
+    .basket-long-btns .basket-modal__title-wrap {
+        margin: 10px 10px 0px 10px;
+    }
+}

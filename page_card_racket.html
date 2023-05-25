@@ -120,7 +120,7 @@
                                 <path d="M16.4434 16.4438L20.9996 21.0001" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </a>
-                        <a href="/profile.html" class="head-main__profil head-main__adaptiv-link">
+                        <a href="#auth" class="head-main__profil head-main__adaptiv-link">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 15C15.3137 15 18 12.3137 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 12.3137 8.68629 15 12 15Z" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M2.90625 20.2499C3.82775 18.6534 5.15328 17.3277 6.74958 16.406C8.34588 15.4843 10.1567 14.999 12 14.999C13.8433 14.999 15.6541 15.4843 17.2504 16.406C18.8467 17.3277 20.1722 18.6534 21.0938 20.2499" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
@@ -2802,6 +2802,123 @@
             </div>
         </div>       
     </footer>
+
+    <div id="auth" class="modal">
+        <a href="#" class="modal__area"></a>
+        <div class="modal__body">
+            <div class="modal__content">
+                <a href="#" class="modal__close">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="29.0909" height="1.81818" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 22.1279 20.9082)" fill="#ED2438"/>
+                        <rect x="0.272461" y="20.9072" width="29.0909" height="1.81818" transform="rotate(-45 0.272461 20.9072)" fill="#ED2438"/>
+                    </svg>
+                </a>
+                <h3 class="modal__title">Авторизация</h3>
+                <form action="">                   
+                    <div class="text-field">
+                        <input class="text-field__input" type="text" placeholder=" " />
+                        <label class="text-field__label">
+                            Логин
+                            <span class="text-field__important">*</span> 
+                        </label>
+                    </div>
+
+                    <div class="text-field password__btn-box">
+                        <input class="text-field__input password__input" type="password" placeholder=" " />
+                        <label class="text-field__label">
+                            Пароль
+                            <span class="text-field__important">*</span> 
+                        </label>
+                        <div class="password__btn"></div>
+                    </div>
+                    <div class="modal__remember-box">
+                        <label class="checkbox-container text-15-reg">Запомнить меня
+                            <input type="checkbox" id="">
+                            <span class="checkmark"></span>
+                        </label>  
+                        <a href="" class="text-15-reg modal__remember-link">Забыли пароль?</a>
+                    </div>
+
+                    <button type="submit" class="text-16-reg modal__btn">Войти</button>
+                </form>
+
+                <div class="modal__generate-box">
+                    <p class="text-14-reg">Ещё нет аккаунта? 
+                        <a href="#login" class="modal__generate-link">Создайте его</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="login" class="modal">
+        <a href="#" class="modal__area"></a>
+        <div class="modal__body">
+            <div class="modal__content">
+                <a href="#" class="modal__close">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="29.0909" height="1.81818" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 22.1279 20.9082)" fill="#ED2438"/>
+                        <rect x="0.272461" y="20.9072" width="29.0909" height="1.81818" transform="rotate(-45 0.272461 20.9072)" fill="#ED2438"/>
+                    </svg>
+                </a>
+                <h3 class="modal__title">Регистрация</h3>
+                <form action="">   
+                    <div class="text-field">
+                        <input class="text-field__input" type="text" placeholder=" " />
+                        <label class="text-field__label">
+                            ФИО
+                            <span class="text-field__important">*</span> 
+                        </label>
+                    </div>
+
+                    <div class="text-field">
+                        <input class="text-field__input" type="tel" placeholder=" " />
+                        <label class="text-field__label">
+                            Телефон
+                            <span class="text-field__important">*</span> 
+                        </label>
+                    </div>
+
+                    <div class="text-field">
+                        <input class="text-field__input" type="email" placeholder=" " />
+                        <label class="text-field__label">
+                            E-mail
+                            <span class="text-field__important">*</span> 
+                        </label>
+                    </div>
+
+                    <div class="text-field">
+                        <input class="text-field__input" type="text" placeholder=" " />
+                        <label class="text-field__label">
+                            Логин
+                            <span class="text-field__important">*</span> 
+                        </label>
+                    </div>
+
+                    <div class="text-field password__btn-box">
+                        <input class="text-field__input password__input" type="password" placeholder=" " />
+                        <label class="text-field__label">
+                            Пароль
+                            <span class="text-field__important">*</span> 
+                        </label>
+                        <div class="password__btn"></div>
+                    </div>
+
+                    <div class="text-field password__btn-box">
+                        <input class="text-field__input password__input" type="password" placeholder=" " />
+                        <label class="text-field__label">
+                            Подтверждение пароля
+                            <span class="text-field__important">*</span> 
+                        </label>
+                        <div class="password__btn"></div>
+                    </div>
+
+                    <button type="submit" class="text-16-reg modal__btn">Зарегистрироваться</button>
+                </form>
+
+            </div>
+        </div>
+    </div>  
     
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
      
@@ -2813,7 +2930,7 @@
     <script src="./script/slider.js"></script>
     <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="./script/map.js" type="text/javascript"></script>  
-
+    <script src="./script/modal.js"></script> 
 </body>
 </html>
 

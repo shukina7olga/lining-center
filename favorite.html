@@ -120,7 +120,7 @@
                                 <path d="M16.4434 16.4438L20.9996 21.0001" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </a>
-                        <a href="/profile.html" class="head-main__profil head-main__adaptiv-link">
+                        <a href="#auth" class="head-main__profil head-main__adaptiv-link">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 15C15.3137 15 18 12.3137 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 12.3137 8.68629 15 12 15Z" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M2.90625 20.2499C3.82775 18.6534 5.15328 17.3277 6.74958 16.406C8.34588 15.4843 10.1567 14.999 12 14.999C13.8433 14.999 15.6541 15.4843 17.2504 16.406C18.8467 17.3277 20.1722 18.6534 21.0938 20.2499" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
@@ -143,7 +143,7 @@
                             <span class="head-main__figure">14</span>
                             <p>избранное</p>
                         </a>
-                        <a href="/basket.html" class="head-main__adaptiv-link">
+                        <a href="#basket-auth" class="head-main__adaptiv-link">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M17.25 17.25H6.54375L3.92813 2.86875C3.89752 2.69653 3.80768 2.54042 3.67415 2.42743C3.54062 2.31444 3.37179 2.25168 3.19687 2.25H1.5" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M7.5 21C8.53553 21 9.375 20.1605 9.375 19.125C9.375 18.0895 8.53553 17.25 7.5 17.25C6.46447 17.25 5.625 18.0895 5.625 19.125C5.625 20.1605 6.46447 21 7.5 21Z" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
@@ -765,6 +765,393 @@
         </div>       
     </footer>
     
+
+    <div id="auth" class="modal">
+        <a href="#" class="modal__area"></a>
+        <div class="modal__body">
+            <div class="modal__content">
+                <a href="#" class="modal__close">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="29.0909" height="1.81818" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 22.1279 20.9082)" fill="#ED2438"/>
+                        <rect x="0.272461" y="20.9072" width="29.0909" height="1.81818" transform="rotate(-45 0.272461 20.9072)" fill="#ED2438"/>
+                    </svg>
+                </a>
+                <h3 class="modal__title">Авторизация</h3>
+                <form action="">                   
+                    <div class="text-field">
+                        <input class="text-field__input" type="text" placeholder=" " />
+                        <label class="text-field__label">
+                            Логин
+                            <span class="text-field__important">*</span> 
+                        </label>
+                    </div>
+
+                    <div class="text-field password__btn-box">
+                        <input class="text-field__input password__input" type="password" placeholder=" " />
+                        <label class="text-field__label">
+                            Пароль
+                            <span class="text-field__important">*</span> 
+                        </label>
+                        <div class="password__btn"></div>
+                    </div>
+                    <div class="modal__remember-box">
+                        <label class="checkbox-container text-15-reg">Запомнить меня
+                            <input type="checkbox" id="">
+                            <span class="checkmark"></span>
+                        </label>  
+                        <a href="" class="text-15-reg modal__remember-link">Забыли пароль?</a>
+                    </div>
+
+                    <button type="submit" class="text-16-reg modal__btn">Войти</button>
+                </form>
+
+                <div class="modal__generate-box">
+                    <p class="text-14-reg">Ещё нет аккаунта? 
+                        <a href="#login" class="modal__generate-link">Создайте его</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="login" class="modal">
+        <a href="#" class="modal__area"></a>
+        <div class="modal__body">
+            <div class="modal__content">
+                <a href="#" class="modal__close">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="29.0909" height="1.81818" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 22.1279 20.9082)" fill="#ED2438"/>
+                        <rect x="0.272461" y="20.9072" width="29.0909" height="1.81818" transform="rotate(-45 0.272461 20.9072)" fill="#ED2438"/>
+                    </svg>
+                </a>
+                <h3 class="modal__title">Регистрация</h3>
+                <form action="">   
+                    <div class="text-field">
+                        <input class="text-field__input" type="text" placeholder=" " />
+                        <label class="text-field__label">
+                            ФИО
+                            <span class="text-field__important">*</span> 
+                        </label>
+                    </div>
+
+                    <div class="text-field">
+                        <input class="text-field__input" type="tel" placeholder=" " />
+                        <label class="text-field__label">
+                            Телефон
+                            <span class="text-field__important">*</span> 
+                        </label>
+                    </div>
+
+                    <div class="text-field">
+                        <input class="text-field__input" type="email" placeholder=" " />
+                        <label class="text-field__label">
+                            E-mail
+                            <span class="text-field__important">*</span> 
+                        </label>
+                    </div>
+
+                    <div class="text-field">
+                        <input class="text-field__input" type="text" placeholder=" " />
+                        <label class="text-field__label">
+                            Логин
+                            <span class="text-field__important">*</span> 
+                        </label>
+                    </div>
+
+                    <div class="text-field password__btn-box">
+                        <input class="text-field__input password__input" type="password" placeholder=" " />
+                        <label class="text-field__label">
+                            Пароль
+                            <span class="text-field__important">*</span> 
+                        </label>
+                        <div class="password__btn"></div>
+                    </div>
+
+                    <div class="text-field password__btn-box">
+                        <input class="text-field__input password__input" type="password" placeholder=" " />
+                        <label class="text-field__label">
+                            Подтверждение пароля
+                            <span class="text-field__important">*</span> 
+                        </label>
+                        <div class="password__btn"></div>
+                    </div>
+
+                    <button type="submit" class="text-16-reg modal__btn">Зарегистрироваться</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="basket-auth" class="modal basket-modal">
+        <a href="#" class="modal__area"></a>
+        <div class="modal__body">
+            <div class="modal__content">
+                <!-- <a href="#" class="modal__close">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="29.0909" height="1.81818" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 22.1279 20.9082)" fill="#ED2438"/>
+                        <rect x="0.272461" y="20.9072" width="29.0909" height="1.81818" transform="rotate(-45 0.272461 20.9072)" fill="#ED2438"/>
+                    </svg>
+                </a> -->
+                <p class="text-20-reg">Ваша корзина</p>
+                <div class="grey-line"></div>
+
+                <div class="basket-modal__products">
+                    <div class="basket-modal__product">
+                        <img src="./img/goods-card-main/item6.png" alt="">
+                        <div class="basket-modal__inform">
+                            <p class="text-16-reg basket-modal__product-name">Ракетка бадминтона LI-NING TURBO CHARGING 50</p>
+
+                            <div class="basket-modal__count-box">
+                                <div class="purchase-table__col purchase-table__col-btns">
+                                    <button class="purchase-table__btns purchase-table__minus">
+                                        <svg width="15" height="2" viewBox="0 0 15 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.625 1H14.375" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                    <p class="text-15-reg">100</p>
+                                    <button class="purchase-table__btns purchase-table__plus">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.625 10H17.375" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.5 3.125V16.875" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                </div>
+    
+                                <p class="text-20-reg">1 500<span class="valuta">₽</span></p>
+                            </div>
+                        </div>
+                        
+                        <button class="basket-modal__product-close">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.25 5.25L5.75 18.75" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.25 18.75L5.75 5.25" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </button>
+                    </div>
+
+                    <div class="basket-modal__product">
+                        <img src="./img/goods-card-main/item6.png" alt="">
+                        <div class="basket-modal__inform">
+                            <p class="text-16-reg basket-modal__product-name">Ракетка бадминтона LI-NING TURBO CHARGING 50</p>
+
+                            <div class="basket-modal__count-box">
+                                <div class="purchase-table__col purchase-table__col-btns">
+                                    <button class="purchase-table__btns purchase-table__minus">
+                                        <svg width="15" height="2" viewBox="0 0 15 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.625 1H14.375" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                    <p class="text-15-reg">100</p>
+                                    <button class="purchase-table__btns purchase-table__plus">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.625 10H17.375" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.5 3.125V16.875" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                </div>
+    
+                                <p class="text-20-reg">1 500<span class="valuta">₽</span></p>
+                            </div>
+                        </div>
+                        
+                        <button class="basket-modal__product-close">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.25 5.25L5.75 18.75" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.25 18.75L5.75 5.25" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </button>
+                    </div>
+
+                    <div class="basket-modal__product">
+                        <img src="./img/goods-card-main/item6.png" alt="">
+                        <div class="basket-modal__inform">
+                            <p class="text-16-reg basket-modal__product-name">Ракетка бадминтона LI-NING TURBO CHARGING 50</p>
+
+                            <div class="basket-modal__count-box">
+                                <div class="purchase-table__col purchase-table__col-btns">
+                                    <button class="purchase-table__btns purchase-table__minus">
+                                        <svg width="15" height="2" viewBox="0 0 15 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.625 1H14.375" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                    <p class="text-15-reg">100</p>
+                                    <button class="purchase-table__btns purchase-table__plus">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.625 10H17.375" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.5 3.125V16.875" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                </div>
+    
+                                <p class="text-20-reg">1 500<span class="valuta">₽</span></p>
+                            </div>
+                        </div>
+                        
+                        <button class="basket-modal__product-close">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.25 5.25L5.75 18.75" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.25 18.75L5.75 5.25" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </button>
+                    </div>
+                    
+                </div>
+
+                <a class="text-16-reg basket-modal__btn basket-modal__btn--grey">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.0312 3.25H10.9688C7.82763 3.25 5.28125 5.79638 5.28125 8.9375V17.0625C5.28125 20.2036 7.82763 22.75 10.9688 22.75H15.0312C18.1724 22.75 20.7188 20.2036 20.7188 17.0625V8.9375C20.7188 5.79638 18.1724 3.25 15.0312 3.25Z" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5.28125 11.375H20.7188" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13 11.375V3.25" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Быстрый заказ
+                </a>
+                <button class="text-16-reg modal__btn basket-modal__btn">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.6875 18.6875H7.08906L4.25547 3.10781C4.22232 2.92124 4.12499 2.75212 3.98033 2.62971C3.83567 2.50731 3.65277 2.43931 3.46328 2.4375H1.625" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.125 22.75C9.24683 22.75 10.1562 21.8406 10.1562 20.7188C10.1562 19.5969 9.24683 18.6875 8.125 18.6875C7.00317 18.6875 6.09375 19.5969 6.09375 20.7188C6.09375 21.8406 7.00317 22.75 8.125 22.75Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.6875 22.75C19.8093 22.75 20.7188 21.8406 20.7188 20.7188C20.7188 19.5969 19.8093 18.6875 18.6875 18.6875C17.5657 18.6875 16.6562 19.5969 16.6562 20.7188C16.6562 21.8406 17.5657 22.75 18.6875 22.75Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.34766 14.625H19.1039C19.4837 14.6262 19.8518 14.4934 20.1434 14.2501C20.435 14.0067 20.6316 13.6684 20.6984 13.2945L21.9375 6.5H4.875" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Купить
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="basket-guest" class="modal basket-modal basket-long-btns">
+        <a href="#" class="modal__area"></a>
+        <div class="modal__body">
+            <div class="modal__content">
+                <!-- <a href="#" class="modal__close">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="29.0909" height="1.81818" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 22.1279 20.9082)" fill="#ED2438"/>
+                        <rect x="0.272461" y="20.9072" width="29.0909" height="1.81818" transform="rotate(-45 0.272461 20.9072)" fill="#ED2438"/>
+                    </svg>
+                </a> -->
+                <div class="basket-modal__title-wrap">
+                    <p class="text-20-reg">Ваша корзина</p>
+                    <div class="grey-line"></div>                    
+                </div>
+
+                <div class="basket-modal__products">
+                    <div class="basket-modal__product">
+                        <img src="./img/goods-card-main/item6.png" alt="">
+                        <div class="basket-modal__inform">
+                            <p class="text-16-reg basket-modal__product-name">Ракетка бадминтона LI-NING TURBO CHARGING 50</p>
+
+                            <div class="basket-modal__count-box">
+                                <div class="purchase-table__col purchase-table__col-btns">
+                                    <button class="purchase-table__btns purchase-table__minus">
+                                        <svg width="15" height="2" viewBox="0 0 15 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.625 1H14.375" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                    <p class="text-15-reg">100</p>
+                                    <button class="purchase-table__btns purchase-table__plus">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.625 10H17.375" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.5 3.125V16.875" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                </div>
+    
+                                <p class="text-20-reg">1 500<span class="valuta">₽</span></p>
+                            </div>
+                        </div>
+                        
+                        <button class="basket-modal__product-close">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.25 5.25L5.75 18.75" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.25 18.75L5.75 5.25" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </button>
+                    </div>
+
+                    <div class="basket-modal__product">
+                        <img src="./img/goods-card-main/item6.png" alt="">
+                        <div class="basket-modal__inform">
+                            <p class="text-16-reg basket-modal__product-name">Ракетка бадминтона LI-NING TURBO CHARGING 50</p>
+
+                            <div class="basket-modal__count-box">
+                                <div class="purchase-table__col purchase-table__col-btns">
+                                    <button class="purchase-table__btns purchase-table__minus">
+                                        <svg width="15" height="2" viewBox="0 0 15 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.625 1H14.375" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                    <p class="text-15-reg">100</p>
+                                    <button class="purchase-table__btns purchase-table__plus">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.625 10H17.375" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.5 3.125V16.875" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                </div>
+    
+                                <p class="text-20-reg">1 500<span class="valuta">₽</span></p>
+                            </div>
+                        </div>
+                        
+                        <button class="basket-modal__product-close">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.25 5.25L5.75 18.75" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.25 18.75L5.75 5.25" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </button>
+                    </div>
+
+                    <div class="basket-modal__product">
+                        <img src="./img/goods-card-main/item6.png" alt="">
+                        <div class="basket-modal__inform">
+                            <p class="text-16-reg basket-modal__product-name">Ракетка бадминтона LI-NING TURBO CHARGING 50</p>
+
+                            <div class="basket-modal__count-box">
+                                <div class="purchase-table__col purchase-table__col-btns">
+                                    <button class="purchase-table__btns purchase-table__minus">
+                                        <svg width="15" height="2" viewBox="0 0 15 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.625 1H14.375" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                    <p class="text-15-reg">100</p>
+                                    <button class="purchase-table__btns purchase-table__plus">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.625 10H17.375" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.5 3.125V16.875" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                </div>
+    
+                                <p class="text-20-reg">1 500<span class="valuta">₽</span></p>
+                            </div>
+                        </div>
+                        
+                        <button class="basket-modal__product-close">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.25 5.25L5.75 18.75" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.25 18.75L5.75 5.25" stroke="#201E1E" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </button>
+                    </div>
+                    
+                </div>
+
+                <a href="./basket.html" class="text-16-reg basket-modal__btn basket-modal__btn--grey">
+                    Перейти в корзину
+                </a>
+                <button class="text-16-reg modal__btn basket-modal__btn">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.6875 18.6875H7.08906L4.25547 3.10781C4.22232 2.92124 4.12499 2.75212 3.98033 2.62971C3.83567 2.50731 3.65277 2.43931 3.46328 2.4375H1.625" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.125 22.75C9.24683 22.75 10.1562 21.8406 10.1562 20.7188C10.1562 19.5969 9.24683 18.6875 8.125 18.6875C7.00317 18.6875 6.09375 19.5969 6.09375 20.7188C6.09375 21.8406 7.00317 22.75 8.125 22.75Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.6875 22.75C19.8093 22.75 20.7188 21.8406 20.7188 20.7188C20.7188 19.5969 19.8093 18.6875 18.6875 18.6875C17.5657 18.6875 16.6562 19.5969 16.6562 20.7188C16.6562 21.8406 17.5657 22.75 18.6875 22.75Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.34766 14.625H19.1039C19.4837 14.6262 19.8518 14.4934 20.1434 14.2501C20.435 14.0067 20.6316 13.6684 20.6984 13.2945L21.9375 6.5H4.875" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Оформить заказ
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>     
     <script type="text/javascript" src="./script/slick.min.js"></script>
     <script src="./script/videos.js"></script>
@@ -772,7 +1159,8 @@
     <script src="./script/menu.js"></script>
     <script src="./script/slider.js"></script>
     <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="./script/map.js" type="text/javascript"></script>  
+    <script src="./script/map.js" type="text/javascript"></script> 
+    <script src="./script/modal.js"></script> 
 </body>
 </html>
 
