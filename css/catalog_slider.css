@@ -83,7 +83,9 @@
 }
 
 
-.catalog-slider__inform {
-    padding: 25px 0 25px 10px;
-    width: 26%;
+@media (max-width: 768px) {
+    .catalog-slider__inform {
+        padding: 25px 0 25px 10px;
+        width: 26%;
+    }    
 }

@@ -7,7 +7,7 @@
 .catalog__header {
     padding: 10px 0;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
 }
 
@@ -389,7 +389,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media (max-width: 1440px) {
     .catalog__header-text {
-        width: 55%;
+        width: 80%;
     }
 }
 
@@ -438,10 +438,14 @@ input[type="number"]::-webkit-inner-spin-button {
 
     .catalog__header {
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .catalog__header-text {
         width: 100%;
+    }
+
+    .catalog__header-wrap {
         padding-bottom: 15px;
     }
 
