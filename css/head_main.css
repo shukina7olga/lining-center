@@ -158,6 +158,21 @@
     display: none;
 }
 
+
+.head-main__profil.user {
+    display: flex;
+    align-items: end;        
+}
+
+.head-main__profil.user p {
+    display: block;
+    color: #ED2438;
+}
+
+.head-main__profil.user svg path {
+    stroke: #ED2438;
+}
+
 @media (max-width: 1024px) {
     .head-main__nav-links {
         display: none;
