@@ -179,6 +179,35 @@ $(".document").ready(function() {
     });
 
 
+    $(".catalog-slider").slick({
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1, 
+        // variableWidth: true,
+        responsive: [
+            {
+              breakpoint: 1440,
+              settings: {
+                slidesToShow: 3,
+              }  
+            },
+            {
+                breakpoint: 1205,
+                settings: {
+                    slidesToShow: 2,
+                    dots: false,
+                }  
+            },
+            {   breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }               
+            },
+        ]  
+    });
+
     // $(".tabs__item").on("click", function() {
     //     // $(".one-tab-link").removeClass("tab-active");
     //     // $(this).addClass("tab-active");
@@ -193,5 +222,15 @@ $(".document").ready(function() {
     //       }
     //     });
     // });
+
+// необходимо для слайдеров в табах. чтобы они загружались сразу
+    let tabsItem = document.querySelectorAll('.tabs__slider-item');
+    let tabsSlider = document.querySelectorAll('.tabs-slider');
+
+    tabsItem.forEach((tab, index) => {
+        tab.addEventListener('click', () => {
+            tabsSlider[index].slick.refresh();
+        });
+    });
     
 });
